@@ -1,68 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checkout Page</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout Page</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+        />
+    </head>
 
-<body>
-    <!--NavBar Section-->
-    <nav>Coffee Masters</nav>
+    <body>
+        <!--NavBar Section-->
+        <nav><img src="https://github.com/OliverCadman/xander-mini-projects/blob/main/checkout-page/assets/images/coffee_masters_logo.png?raw=true"
+            ><span class="nav">Coffee Masters</span></nav>
 
-    <!--Items Section-->
-    <section>
-        <h3>ITEMS</h3>
-        <ul>
-            <li>1x Cappuccino $6.00</li>
+        <!--Items Section-->
+        <div id="items" class="wrapper">
+            <section>
+                <h3>ITEMS</h3>
+                <table>
+                    <tr>
+                        <td>1x</td>
+                        <td>Cappuccino</td>
+                        <td>$6.00</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Light Foam</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>1x</td>
+                        <td>Cappuccino</td>
+                        <td>$3.85</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Light milk</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Double espresso</td>
+                        <td></td>
+                    </tr>
+                </table>
+                <ul>
+                    <li>1x Cappuccino $6.00</li>
+                    <ul>
+                        <li>Light Foam</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>1x Cappuccino $7.90</li>
+                    <ul>
+                        <li>Almond Milk</li>
+                        <li>Double Espresso Shot</li>
+                    </ul>
+                </ul>
+                <ul>
+                    <li>1x Croissant $5.37</li>
+                    <ul>
+                        <li>Butter</li>
+                    </ul>
+                </ul>
+            </section>
+        </div>
+       
+        <!--Name Section-->
+        <div id="name" class="wrapper">
+            <section>
+            <h3>NAME</h3>
+            <label>Name for order</label>
+            <input placeholder="Name">
+            </section>
+        </div>
+        
+
+        <!--Payment Section-->
+        <div id="payment" class="wrapper">
+            <section>
+            <h3>PAYMENT</h3>
+            <label>Card number</label>
+            <input placeholder="">
+            <label>CCV Number</label>
+            <input placeholder="">
+            </section>
+        </div>
+        
+        
+        <!--Total Section-->
+        <div id="total">
+            <section>
             <ul>
-                <li>Light Foam</li>
+                <li>Subtotal: $9.65</li>
+                <li>Tax: $0.82</li>
+                <li>Total: $10.47</li>
             </ul>
-        </ul>
-        <ul>
-            <li>1x Cappuccino $7.90</li>
-            <ul>
-                <li>Almond Milk</li>
-                <li>Double Espresso Shot</li>
-            </ul>
-        </ul>
-        <ul>
-            <li>1x Croissant $5.37</li>
-            <ul>
-                <li>Butter</li>
-            </ul>
-        </ul>
-    </section>
+            <button>Place order</button>
+            </section>
+        </div>
+        
 
-    <!--Name Section-->
-    <section>
-        <h3>NAME</h3>
-        <label>Name for order</label>
-        <input placeholder="Type Here">
-    </section>
-
-    <!--Payment Section-->
-    <section>
-        <h3>PAYMENT</h3>
-        <label>Card number</label>
-        <input placeholder="Type Here">
-        <label>CCV Number</label>
-        <input placeholder="Type Here">
-    </section>
-    
-    <!--Total Section-->
-    <section>
-        <ul>
-            <li>Subtotal: $9.65</li>
-            <li>Tax: $0.82</li>
-            <li>Total: $10.47</li>
-        </ul>
-    </section>
-    
-    <!--Button Section-->
-    <button>Place order</button>
-</body>
+        <!--Button Section-->
+        
+    </body>
 
 </html>
