@@ -23,46 +23,54 @@
                 ><span class="nav">Coffee Masters</span></nav>
 
             <!--Items Section-->
-            <div id="items" class="box-items">
+            <div id="items">
                 <section>
                     <h3>ITEMS</h3>
+                    
                     <table>
                         <tr>
                             <td>1x</td>
-                            <td>Cappuccino</td>
-                            <td>$6.00</td>
+                            <td class="bold">Cappuccino</td>
+                            <td class="bold">$6.00</td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>Light Foam</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>1x</td>
-                            <td>Cappuccino</td>
-                            <td>$3.85</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Light Milk</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Double espresso</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>1x</td>
-                            <td>Croissant</td>
-                            <td>$5.37</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>Butter</td>
+                            <td class="item-color">Light Foam</td>
                             <td></td>
                         </tr>
                     </table>
+                    <table>
+                        <div class="light-border"></div>
+                        <tr>
+                            <td>1x</td>
+                            <td class="bold">Cappuccino</td>
+                            <td class="bold">$3.85</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="item-color">Light Milk</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="item-color">Double espresso</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <table>
+                        <div class="light-border"></div>
+                        <tr>
+                            <td>1x</td>
+                            <td class="bold">Croissant</td>
+                            <td class="bold">$5.37</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="item-color">Butter</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    
                 </section>
             </div>
         
@@ -70,12 +78,10 @@
             <div id="name">
                 <section>
                 <h3>NAME</h3>
-                <form>
-                    <fieldset>
-                        <legend>Name for order</legend>
-                        <input type="text" placeholder="Type name">
-                    </fieldset>
-                </form>
+                <div class="box">
+                    <label class="input-label">Name for order</label>
+                    <input class="input-border" type="text">
+                </div>
                 </section>
             </div>
             
@@ -84,18 +90,16 @@
             <div id="payment">
                 <section>
                 <h3>PAYMENT</h3>
-                <form>
-                    <fieldset>
-                        <legend>Card number</legend>
-                        <input type="number">
-                    </fieldset>
-                </form>
-                <form>
-                    <fieldset>
-                        <legend>CCV Number</legend>
-                        <input type="number"></input>
-                    </fieldset>
-                </form>
+                <div class="box">
+                    <label class="input-label">Card Number</label>
+                    <input class="input-border" type="text">
+                </div>
+                <br>
+                <br>
+                <div class="box">
+                    <label class="input-label">CCV Number</label>
+                    <input class="input-border" type="text">
+                </div>
                 </section>
             </div>
             
@@ -112,9 +116,12 @@
                             <td>Tax:</td>
                             <td>$0.82</td>
                         </tr>
+                    </table>
+                    <br>
+                    <table>
                         <tr>
-                            <td>Total:</td>
-                            <td>$10.47</td>
+                            <td class="bold">Total:</td>
+                            <td class="bold">$10.47</td>
                         </tr>
                     </table>
                 </section>

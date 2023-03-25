@@ -7,7 +7,7 @@
     --light-orange: #eee1d5;
     --white:  #efefef;
     --nude:  #b08968;
-    --font-size: 2vw;
+    --font-size: 2rems;
     --mono:"Oxygen mono", monospace;
     --sans: "Oxygen", sans-serif;
 }
@@ -20,6 +20,11 @@ body {
     font-size: var(--font-size);
     background-color: var(--white);
     
+}
+
+h3 {
+    color: var(--brown);
+    font-size: 1.5vw;
 }
 
 /* NavBar Section */
@@ -47,6 +52,10 @@ nav img {
     gap: 4%;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 /* Items Sections */
 
 #items {
@@ -56,6 +65,7 @@ nav img {
     border-radius: 1rem;
     padding: 1rem 2rem 2rem 2rem;
     background-color: var(--light-orange);
+    font-size: 1.5vw;
 }
 
 table {
@@ -63,9 +73,20 @@ table {
 }
 
 table tr td:last-child {
-    text-align: end;
+    text-align: end
     
 }
+
+.item-color {
+    color: var(--brown);
+}
+
+.light-border {
+    border: 1px solid var(--nude);
+    
+}
+
+
 
 /* Name Section */
 
@@ -77,8 +98,33 @@ table tr td:last-child {
     background-color: var(--light-orange);
     height: fit-content;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    
+}
+
+.box {
+    position: relative;
+    display: inline-block;
+    
+}
+
+.input-border {
+    border-color: var(--brown);
+    background-color: var(--light-orange);
+    padding: 8px;
+    border-radius: 15px;
+    grid-column: 5/ 9;
+    width: 100%;
+    
+}
+
+.input-label {
+    background-color: var(--light-orange);
+    color: var(--brown);
+    font-size: 1vw;
+    position: absolute;
+    left: 25px;
+    top: -7px;
+    padding: 0 2px;
     
 }
 
@@ -90,11 +136,13 @@ table tr td:last-child {
     background-color: var(--light-orange);
     height: fit-content;
     
+    
 }
 
 #total{
     grid-column: 4/ 6;
     background-color: var(--white);
+    font-size: 1.5vw;
     
 }
 
@@ -104,6 +152,7 @@ button {
     border-radius: 20px 20px 20px 20px;
     padding: 1rem;
     margin-bottom: 3rem;
+    font-size: 1.5vw;
     
 }
 
