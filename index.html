@@ -17,101 +17,113 @@
     </head>
 
     <body>
-        <!--NavBar Section-->
-        <nav><img src="https://github.com/OliverCadman/xander-mini-projects/blob/main/checkout-page/assets/images/coffee_masters_logo.png?raw=true"
-            ><span class="nav">Coffee Masters</span></nav>
+        <div class="wrapper">
+            <!--NavBar Section-->
+            <nav><img src="https://github.com/OliverCadman/xander-mini-projects/blob/main/checkout-page/assets/images/coffee_masters_logo.png?raw=true"
+                ><span class="nav">Coffee Masters</span></nav>
 
-        <!--Items Section-->
-        <div id="items" class="wrapper">
-            <section>
-                <h3>ITEMS</h3>
-                <table>
-                    <tr>
-                        <td>1x</td>
-                        <td>Cappuccino</td>
-                        <td>$6.00</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Light Foam</td>
-                        <td></td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td>1x</td>
-                        <td>Cappuccino</td>
-                        <td>$3.85</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Light milk</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Double espresso</td>
-                        <td></td>
-                    </tr>
-                </table>
-                <ul>
-                    <li>1x Cappuccino $6.00</li>
-                    <ul>
-                        <li>Light Foam</li>
-                    </ul>
-                </ul>
-                <ul>
-                    <li>1x Cappuccino $7.90</li>
-                    <ul>
-                        <li>Almond Milk</li>
-                        <li>Double Espresso Shot</li>
-                    </ul>
-                </ul>
-                <ul>
-                    <li>1x Croissant $5.37</li>
-                    <ul>
-                        <li>Butter</li>
-                    </ul>
-                </ul>
-            </section>
-        </div>
-       
-        <!--Name Section-->
-        <div id="name" class="wrapper">
-            <section>
-            <h3>NAME</h3>
-            <label>Name for order</label>
-            <input placeholder="Name">
-            </section>
-        </div>
+            <!--Items Section-->
+            <div id="items" class="box-items">
+                <section>
+                    <h3>ITEMS</h3>
+                    <table>
+                        <tr>
+                            <td>1x</td>
+                            <td>Cappuccino</td>
+                            <td>$6.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Light Foam</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1x</td>
+                            <td>Cappuccino</td>
+                            <td>$3.85</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Light Milk</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Double espresso</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1x</td>
+                            <td>Croissant</td>
+                            <td>$5.37</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Butter</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
         
+            <!--Name Section-->
+            <div id="name">
+                <section>
+                <h3>NAME</h3>
+                <form>
+                    <fieldset>
+                        <legend>Name for order</legend>
+                        <input type="text" placeholder="Type name">
+                    </fieldset>
+                </form>
+                </section>
+            </div>
+            
 
-        <!--Payment Section-->
-        <div id="payment" class="wrapper">
-            <section>
-            <h3>PAYMENT</h3>
-            <label>Card number</label>
-            <input placeholder="">
-            <label>CCV Number</label>
-            <input placeholder="">
-            </section>
-        </div>
-        
-        
-        <!--Total Section-->
-        <div id="total">
-            <section>
-            <ul>
-                <li>Subtotal: $9.65</li>
-                <li>Tax: $0.82</li>
-                <li>Total: $10.47</li>
-            </ul>
+            <!--Payment Section-->
+            <div id="payment">
+                <section>
+                <h3>PAYMENT</h3>
+                <form>
+                    <fieldset>
+                        <legend>Card number</legend>
+                        <input type="number">
+                    </fieldset>
+                </form>
+                <form>
+                    <fieldset>
+                        <legend>CCV Number</legend>
+                        <input type="number"></input>
+                    </fieldset>
+                </form>
+                </section>
+            </div>
+            
+            
+            <!--Total Section-->
+            <div id="total">
+                <section>
+                    <table>
+                        <tr>
+                            <td>Subtotal:</td>
+                            <td>$9.65</td>
+                        </tr>
+                        <tr>
+                            <td>Tax:</td>
+                            <td>$0.82</td>
+                        </tr>
+                        <tr>
+                            <td>Total:</td>
+                            <td>$10.47</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
             <button>Place order</button>
-            </section>
-        </div>
-        
 
-        <!--Button Section-->
+            <!--Button Section-->
+            
+        </div>
         
     </body>
 
